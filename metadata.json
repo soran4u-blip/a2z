@@ -1,0 +1,6 @@
+{
+  "name": "App Studio",
+  "description": "Build modern web applications, dashboards, tools, and prototypes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

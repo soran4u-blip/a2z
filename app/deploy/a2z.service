@@ -1,0 +1,21 @@
+[Unit]
+Description=a2z.deals web app
+After=network.target
+
+[Service]
+Type=simple
+User=a2z
+Group=a2z
+WorkingDirectory=/opt/a2z
+EnvironmentFile=/opt/a2z/.env
+ExecStart=/usr/bin/node /opt/a2z/server.js
+Restart=always
+RestartSec=3
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/opt/a2z/data
+
+[Install]
+WantedBy=multi-user.target

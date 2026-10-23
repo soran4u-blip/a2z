@@ -1,0 +1,9 @@
+[Unit]
+Description=a2z.deals database backup
+
+[Service]
+Type=oneshot
+User=a2z
+WorkingDirectory=/opt/a2z
+EnvironmentFile=/opt/a2z/.env
+ExecStart=/usr/bin/node /opt/a2z/scripts/backup.js

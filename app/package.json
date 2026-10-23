@@ -1,0 +1,12 @@
+{
+  "name": "a2z-deals",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "a2z.deals - smart deal links with preview cards, analytics, Pro plan and admin dashboard",
+  "scripts": {
+    "start": "node server.js",
+    "create-admin": "node scripts/create-admin.js"
+  },
+  "engines": { "node": ">=22.13" }
+}
